@@ -19,8 +19,8 @@ public:
 
     void display() {
         cout << "ID: " << id 
-             << ", Name: " << name 
-             << ", Grade: " << grade << endl;
+             << "Name: " << name
+             << "Grade: " << grade << endl;
     }
 };
 
@@ -37,15 +37,17 @@ int main() {
         cin >> choice;
 
         if (choice == 1) {
-            string name;
             int id;
+            string name;
             float grade;
-
-            cout << "Enter student name: ";
-            cin >> name;
-
+            
+   
             cout << "Enter student ID: ";
             cin >> id;
+
+            cout << "Enter student name: ";
+            getline(cin >>ws,name) ; 
+            //cin >> name;
 
             cout << "Enter student grade: ";
             cin >> grade;
