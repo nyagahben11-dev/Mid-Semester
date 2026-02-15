@@ -24,6 +24,7 @@ public:
     }
 };
 
+
 int main() {
     vector<Student> students;
     int choice;
@@ -73,6 +74,7 @@ int main() {
         }
 
     } while (choice != 3);
+
 
     return 0;
 }
